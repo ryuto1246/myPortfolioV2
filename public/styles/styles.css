@@ -54,8 +54,16 @@ header h2 {
   margin: 0 auto;
 }
 
-#h-grid-container div{
-  border: 1px solid #ff0;
+.h-g-content {
+  background: #7E57C2;
+}
+
+.h-g-content p {
+  font-size: 9rem;
+}
+
+.h-g-img {
+  background: #FFD800;
 }
 
 #item1-content{
