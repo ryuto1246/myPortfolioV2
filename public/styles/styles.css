@@ -24,7 +24,7 @@ header {
 header .flex-container {
   box-sizing: border-box;
   height: 100%;
-  padding: calc(var(--const-hight)*110) 0;
+  padding: calc(var(--const-hight)*100) 0 calc(var(--const-hight)*120);
 }
 
 
@@ -34,13 +34,13 @@ header h1, h2 {
   line-height: 1;
 }
 
-header h1 {
+header #title > h1 {
   font-size: 71rem;
   font-weight: 900;
   letter-spacing: 10rem;
 }
 
-header h2 {
+header #title > h2 {
   font-size: 23rem;
   font-weight: 500;
   letter-spacing: 3rem;
@@ -55,11 +55,19 @@ header h2 {
 }
 
 .h-g-content {
+  padding: calc(var(--const-width)*23);
   background: #7E57C2;
+  text-align: left;
+}
+
+.h-g-content h1 {
+  font-size: 15rem;
+  font-weight: 500;
 }
 
 .h-g-content p {
   font-size: 9rem;
+  font-weight: 300;
 }
 
 .h-g-img {
