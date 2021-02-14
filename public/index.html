@@ -55,6 +55,14 @@
         </div>
       </div>
     </div>
+    <img id="h-down-icon" src="./imgs/angle-down.svg" alt="▽">
   </header>
+  <main>
+  </main>
+  <script>
+    document.getElementById("h-down-icon").addEventListener("click", () => {
+      window.scrollTo(0, document.documentElement.clientHeight);
+    })
+  </script>
 </body>
 </html>
