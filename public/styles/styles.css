@@ -6,13 +6,15 @@
 html {
   font-size: var(--const-width); 
   letter-spacing: var(--const-width);
-  margin: var(--const-width);
 }
 
 body {
   margin: 0;
   font-family: roboto, source-han-sans-japanese, sans-serif;
-  /* font-feature-settings: "palt" 1, "trad", 1; */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header {
@@ -23,7 +25,6 @@ header {
 }
 
 header .flex-container {
-  box-sizing: border-box;
   height: 100%;
   padding: calc(var(--const-hight)*100) 0 calc(var(--const-hight)*120);
 }
@@ -119,6 +120,47 @@ header #title > h2 {
   right: 0;
   margin: 0 auto;
   font-size: 30rem;
+}
+
+main {
+  margin: calc(var(--const-width)*35);
+}
+
+main section {
+  margin-bottom: calc(var(--const-width)*35);
+}
+
+main > section >h1 {
+  font-size: 19rem;
+  font-weight: 500;
+  padding: calc(var(--const-width)*5) calc(var(--const-width)*7);
+  border-bottom: calc(var(--const-width)*1) solid #707070;
+}
+
+.card {
+  width: 95%;
+  padding: calc(var(--const-width)*28);
+  box-shadow: 0 0 calc(var(--const-width)*10) rgba(0, 0, 0, 0.32);
+  margin: calc(var(--const-width)*28) auto;
+  border-radius: calc(var(--const-width)*5);
+}
+
+.card p {
+  font-size: 14rem;
+  font-weight: 300;
+  margin: calc(var(--const-width)*4) 0;
+  line-height: 1.7;
+}
+
+.card img {
+  width: calc(var(--const-width)*83);
+  border-radius: 50%;
+  border: .5px solid #C4560A;
+  margin-bottom: calc(var(--const-width)*12);
+}
+
+.card p::first-letter {
+  margin-left: calc(var(--const-width)*17);
 }
 
 .bg {
