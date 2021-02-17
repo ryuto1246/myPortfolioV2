@@ -174,14 +174,14 @@ main > section >h1 {
 .card h1 {
   font-size: 22rem;
   font-weight: 400;
-  line-height: 1;
-  margin: calc(var(--const-width)*8) 0 0;
+  line-height: 1.5;
+  margin: calc(var(--const-width)*3) 0 0;
 }
 
 .card p {
   font-size: 14rem;
   font-weight: 300;
-  margin: calc(var(--const-width)*8) calc(var(--const-width)*10) 0;
+  margin: calc(var(--const-width)*10) calc(var(--const-width)*6) 0;
   line-height: 1.6;
 }
 
@@ -235,6 +235,7 @@ main > section >h1 {
 
 #flow .card h1 {
   text-decoration: underline;
+  margin-bottom: calc(var(--const-width)*15);
 }
 
 #flow .card h1::before {
@@ -246,7 +247,7 @@ main > section >h1 {
   background: #0E0E8D;
   width: calc(var(--const-width)*28);
   height: calc(var(--const-width)*28);
-  line-height: calc(var(--const-width)*28);
+  line-height: calc(var(--const-width)*27);
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
