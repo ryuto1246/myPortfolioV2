@@ -34,7 +34,7 @@ header {
 
 header .flex-container {
   height: 100%;
-  padding: calc(var(--const-hight)*100) 0 calc(var(--const-hight)*120);
+  padding: calc(var(--const-hight)*50) 0 calc(var(--const-hight)*70);
 }
 
 .bg {
@@ -68,13 +68,16 @@ header #title > h2 {
 
 #h-grid-container {
   display: grid;
-  grid-template-rows: repeat(4, calc(var(--const-width)*94));
-  grid-template-columns: repeat(3, calc(var(--const-width)*94));
+  grid-template-rows: repeat(4, calc(var(--const-width)*102));
+  grid-template-columns: repeat(3, calc(var(--const-width)*102));
   gap: calc(var(--const-width)*8);
   margin: 0 auto;
 }
 
 .h-g-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: calc(var(--const-width)*23);
   background: #7E57C2;
   text-align: left;
@@ -87,7 +90,8 @@ header #title > h2 {
 
 .h-g-content p {
   font-size: 9rem;
-  font-weight: 300;
+  font-weight: 200;
+  margin-bottom: 0;
 }
 
 .h-g-img {
@@ -180,7 +184,7 @@ main > section >h1 {
 
 .card p {
   font-size: 14rem;
-  font-weight: 300;
+  font-weight: 200;
   margin: calc(var(--const-width)*10) calc(var(--const-width)*6) 0;
   line-height: 1.6;
 }
@@ -202,14 +206,14 @@ main > section >h1 {
 }
 
 .card th {
-  font-weight: 300;
+  font-weight: 200;
   text-align: right;
   width: 40%;
   vertical-align: top;
 }
 
 .card td {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .card th::after {
