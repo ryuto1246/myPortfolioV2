@@ -41,7 +41,7 @@
         </div>
         <div class="h-g-content" id="item3-content">
           <h1>モバイルアプリ</h1>
-          <p>スマホ・タブレット本体で動作するアプリを制作しmす。</p>
+          <p>スマホ・タブレット本体で動作するアプリを制作します。</p>
         </div>
         <div class="h-g-img" id="item3-img">
           <img src="./imgs/mobile.svg"/>
@@ -55,10 +55,10 @@
         </div>
       </div>
     </div>
-    <img class="icon" id="h-down-icon" src="./imgs/angle-down.svg" alt="▽">
+    <a href="#main" id="h-down-icon-container"><img class="icon" id="h-down-icon" src="./imgs/angle-down.svg" alt="▽"></a>
   </header>
-  <main>
-    <section>
+  <main id="main">
+    <section id="self-introduction">
       <h1>自己紹介</h1>
       <div class="card flex-container">
         <img class="icon" id="portfolio" src="./imgs/icon.png">
@@ -189,10 +189,25 @@
       </div>
     </section>
   </main>
-  <script>
-    document.getElementById("h-down-icon").addEventListener("click", () => {
-      window.scrollTo(0, document.documentElement.clientHeight);
-    })
-  </script>
+  <footer>
+    <h1>ご依頼・SNS</h1>
+    <div class="btn form" data-icon="">
+      <img src="imgs/form.svg">
+      <span>ご依頼フォーム</span>
+    </div>
+    <div class="btn twitter" data-icon="">
+      <img src="imgs/twitter.svg">
+      <span>@ryuto1246</span>
+    </div>
+    <div class="btn github" data-icon="">
+      <img src="imgs/github.svg">
+      <span>ryuto1246</span>
+    </div>
+    <div class="btn mail" data-icon="">
+      <img src="imgs/mail.svg">
+      <span>ryutonakamura1246@gmail.com</span>
+    </div>
+    <p id="copyright">(c)ryuto-2021</p>
+  </footer>
 </body>
 </html>
